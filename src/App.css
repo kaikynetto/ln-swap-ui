@@ -57,6 +57,10 @@ body {
   outline: none;
 }
 
+.input:disabled {
+  background-color: white;
+}
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -87,6 +91,5 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .swap:focus {
-  outline-color: #083B89;
-  outline-width: 0.5px;
+  outline-width: 0;
 }
