@@ -24,6 +24,10 @@ function Tx() {
     useEffect(() => {
         ln_swap.get_transaction(txid).then((r) => {
             const data = r.data
+            if (data.from.status == "settled") {
+                navigate("/")
+            }
+            
             if (data.type == "loop-out") {
                 const invoice = data.from.invoice
                 setAddressUri(`lightning:${invoice}`)
