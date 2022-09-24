@@ -1,5 +1,7 @@
 # LN Swap (UI)
 
+![](./img/demo.png)
+
 A simple UI to interact with LN-SWAP backend.
 
 ## Setup:
