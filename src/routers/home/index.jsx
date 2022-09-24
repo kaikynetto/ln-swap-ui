@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { ArrowsDownUp, Power } from "phosphor-react"
+import { ArrowsDownUp } from "phosphor-react"
 import LNSwap from "../../lib/ln_swap";
 
 import { useNavigate } from "react-router-dom";
@@ -41,7 +41,7 @@ function App() {
     
     setToSymbol(backup_from_symbol)
     setFromSymbol(backup_to_symbol)
-
+    
     if (type === "loop-out") {
       setType("loop-in")
     } else {
