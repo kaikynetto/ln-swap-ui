@@ -1,5 +1,5 @@
 .container {
-  background-color: wheat;
+  background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -11,7 +11,7 @@
   border-radius: 1rem;
   align-items: center;
   padding-top: 2%;
-  color: rgb(65, 64, 64);
+  color: white;
 }
 
 .box {
