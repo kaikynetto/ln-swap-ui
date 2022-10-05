@@ -1,5 +1,10 @@
+:root {
+  --primary-color: #1a1a1a;
+  --background-color: #5E17EB;
+}
+
 .container {
-  background-color: #1a1a1a;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -77,7 +82,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .range {
-  width: 35%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--background-color);
+  cursor: pointer;
+  border: none;
+  height: 10%;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .swap {
@@ -85,6 +97,12 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 280px;
   height: 45px;
   border-radius: 15px;
+  color: var(--background-color);
+  transition: all 0.35s ease-in-out;
+}
+
+.swap:hover {
+  
 }
 
 .swap:focus {
